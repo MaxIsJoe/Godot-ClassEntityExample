@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Entities/Fuckboy/Senpai.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Entities/Girls/Osana.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Entities/Girls/Ayano.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Entities/Girls/BestGirl.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Main.gd" type="Script" id=5]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 464.0
+margin_top = 568.0
+margin_right = 580.0
+margin_bottom = 588.0
+text = "Sex"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="harem" type="Node2D" parent="."]
+
+[node name="Ayano" parent="harem" instance=ExtResource( 3 )]
+position = Vector2( 44.55, 145.23 )
+
+[node name="BestGirl" parent="harem" instance=ExtResource( 4 )]
+position = Vector2( 41.55, 438.23 )
+
+[node name="GirlBase" parent="harem" instance=ExtResource( 2 )]
+position = Vector2( 181.55, 282.23 )
+
+[node name="Senpai" parent="harem" instance=ExtResource( 1 )]
+position = Vector2( 835.55, 293.23 )
+
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
