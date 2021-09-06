@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "Entity",
 "language": "GDScript",
 "path": "res://Scenes/Entities/EntityBase.gd"
+}, {
+"base": "Entity",
+"class": "GirlEntity",
+"language": "GDScript",
+"path": "res://Scenes/Entities/Girls/GirlBase.gd"
 } ]
 _global_script_class_icons={
-"Entity": ""
+"Entity": "",
+"GirlEntity": ""
 }
 
 [application]

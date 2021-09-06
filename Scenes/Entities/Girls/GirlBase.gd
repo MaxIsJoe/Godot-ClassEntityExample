@@ -1,4 +1,5 @@
 extends Entity
+class_name GirlEntity
 
 export(float) var EntitySpeed: int  = 220
 export(bool)  var Chasing    : bool = false
