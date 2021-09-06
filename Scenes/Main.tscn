@@ -25,10 +25,10 @@ __meta__ = {
 position = Vector2( 44.55, 145.23 )
 
 [node name="BestGirl" parent="harem" instance=ExtResource( 4 )]
-position = Vector2( 41.55, 438.23 )
+position = Vector2( 251.55, 282.23 )
 
 [node name="GirlBase" parent="harem" instance=ExtResource( 2 )]
-position = Vector2( 181.55, 282.23 )
+position = Vector2( 62.55, 458.23 )
 
 [node name="Senpai" parent="harem" instance=ExtResource( 1 )]
 position = Vector2( 835.55, 293.23 )
